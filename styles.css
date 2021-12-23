@@ -16,23 +16,9 @@ ul, ol {
 img, fieldset, a img, :link img, :visited img {
     border: none;
 }
-label[for], button {
-    cursor: pointer;
-}
-table {
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
 
 img {
     max-width: 100%;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
 }
 
 /* box-sizing */
