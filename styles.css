@@ -1,0 +1,105 @@
+/* reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, main {
+    display: block;
+}
+
+html, body, form, fieldset, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, li, dl, address {
+    margin: 0px;
+    padding: 0px;
+}
+ul, ol {
+    list-style: none;
+}
+:link, :visited {
+    text-decoration: none;
+}
+img, fieldset, a img, :link img, :visited img {
+    border: none;
+}
+label[for], button {
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+img {
+    max-width: 100%;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* box-sizing */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* sticky footer */
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex: none;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* custom properties */
+:root {
+    --base-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    --base-font-size: 16px;
+    --base-line-height: 1.5;
+    --base-text-color: #4d4d4d;
+    --content-width: 960px;
+}
+
+/* page */
+html {
+    margin: 0;
+    min-height: 100%;
+    overflow-y: scroll;
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+}
+
+/* body */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    color: var(--base-text-color);
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* container */
+.l-container {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-right: auto;
+    margin-left: auto;
+}
