@@ -6,55 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajándék Robinak</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    <script>
+        document.body.className = 'hidden';
+    </script>
     <header>
         <div class="l-container">
-            <h1>KARÁCSONYI KUPON</h1>
+            <div class="article opening observable">
+                <h1 class="heading fleck fleck--1">🎄</h1>
+            </div>
         </div>
     </header>
     <main>
         <div class="l-container">
             <section>
-                <h2>Na hová is utazunk jövőre?</h2>
-                <article>
-                    <p>Ahol az ég kék</p>
-                    <img src="eg.jpeg" alt="">
+                <div class="article">
+                    <h2 class="heading heading--h2 fleck fleck--1-5 observable">?</h2>
+                </div>
+                <div class="article">
+                    <h2 class="heading heading--h2 fleck fleck--2 observable">Na hová (is(!)) utazunk jövőre?</h2>
+                </div>
+                <article class="article">
+                    <div class="observable">
+                        <p class="fleck fleck--3">Ahol az ég kék</p>
+                        <img src="eg.jpeg" alt="">
+                    </div>
                 </article>
-                <article>
-                    <p>Ahol a fű zöld,</p>
-                    <img src="fu.jpeg" alt="">
+                <article class="article">
+                    <div class="observable">
+                        <p class=" fleck fleck--4">Ahol a fű zöld,</p>
+                        <img src="fu.jpeg" alt="">
+                    </div>
                 </article>
-                <article>
-                    <p>És ahol az oroszlánok rohangálnak.</p>
-                    <img src="oroszlan.jpeg" alt="">
+                <article class="article">
+                    <div class="observable">
+                        <p class="fleck fleck--5">És ahol az oroszlánok rohangálnak.</p>
+                        <img src="oroszlan.jpeg" alt="">
+                    </div>
                 </article>
-                <article>
-                    <p>Állatkertbe?</p>
-                    <p>Afrikába safarizni?</p>
+                <article class="article">
+                    <div class="fleck fleck--6 observable">
+                        <p>Állatkertbe?</p>
+                        <p>Afrikába safarizni?</p>
+                    </div>
                 </article>
-                <article>
-                    <p>Segítek picit...</p>
+                <article class="article">
+                    <div class="fleck fleck--7 observable">
+                        <p>Segítek picit...</p>
+                    </div>
                 </article>
-                <article>
-                    <img src="london.jpeg" alt="">
+                <article class="article">
+                    <div class="fleck fleck--8 observable">
+                        <img src="london.jpeg" alt="">
+                    </div>
                 </article>
-                <article>
-                    <img src="stamford-bridge.jpeg" alt="">
+                <article class="article">
+                    <div class="fleck fleck--9 observable">
+                        <img src="stamford-bridge.jpeg" alt="">
+                    </div>
                 </article>
-                <article>
-                    <img src="csavo.jpeg" alt="">
+                <article class="article">
+                    <div class="fleck fleck--10 observable">
+                        <img src="csavo.jpeg" alt="">
+                    </div>
                 </article>
             </section>
-            <section>
-                <p>Tavasszal utazzunk Londonba! (ha a covid is úgy akarja).</p>
-                <p>Ez a kupon a Stamford Bridge-be szól<br>
-                egy általad választott időpontban,<br>
-                egy általad választott Chelsea meccsre,<br>
-                és egy szép új mezre.</p>
+            <section class="end fleck fleck--11 observable">
+                <p><span>Tavasszal utazzunk Londonba!</span><br><small>(ha a covid is úgy akarja).</small></p>
+                <p>Ez egy kupon, ami a Stamford Bridge-be szól egy általad választott időpontban, egy általad választott Chelsea meccsre, és egy szép új mezre.</p>
             </section>
-            <section>
+            <section class="close">
+                <span>❄️</span>
                 <p>Nagyon boldog karácsonyt!!!</p>
+                <span>❤️</span>
             </section>
         </div>
     </main>
